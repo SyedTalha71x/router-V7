@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 const Navbar: React.FC = () => {
   return (
@@ -6,24 +7,24 @@ const Navbar: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
-            <a href="/" className="text-lg font-semibold hover:text-gray-300">
+            <Link to="/" className="text-lg font-semibold hover:text-gray-300">
               React Router v7
-            </a>
+            </Link>
           </div>
 
           <div className="hidden md:flex space-x-4">
-            <a href="/" className="hover:text-gray-300">
+            <Link to="/" className="hover:text-gray-300">
               Home
-            </a>
-            <a href="/about" className="hover:text-gray-300">
+            </Link>
+            <Link to="/about" className="hover:text-gray-300">
               About
-            </a>
-            <a href="/services" className="hover:text-gray-300">
-              Services
-            </a>
-            <a href="/contact" className="hover:text-gray-300">
-              Contact
-            </a>
+            </Link>
+            <Link to="/dashboard/finance" className="hover:text-gray-300">
+              Finances
+            </Link>
+            <Link to="/dashboard/analytics" className="hover:text-gray-300">
+              Analytics
+            </Link>
           </div>
 
           <div className="md:hidden">
